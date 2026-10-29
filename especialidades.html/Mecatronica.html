@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFTECH - Mecatrónica</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Fuente de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="otros/Avenir-Light.ttf">
+    <style>
+        /* Permite un desplazamiento suave al hacer clic en las opciones del menú */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Cursor de clic en las imágenes de las tarjetas para abrir el modal detallado */
+        .tarjeta img.Recuadro {
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .tarjeta img.Recuadro:hover {
+            transform: scale(1.02);
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Encabezado / Menú con anclajes-->
+    <nav id="navbar-desktop" class="bg-superior navbar navbar-expand-md text-center p-3 sticky-top">
+        <!--Logo y Titulo-->
+        <div class="container-fluid m-0 p-0">
+            <div class="col-9 col-md-4 d-flex flex-row">
+                <!--Logo-->
+                <div>
+                    <a href="https://tecnicosuperiorneiva.edu.co" target="_blank"><img src="../imagenes/ColegioLogo2.png" alt="Tecnico Superior" class="TecLogo me-3"></a>
+                </div>
+                <!--Titulo-->
+                <div class="align-content-center text-start">
+                    <a href="#" class="TTecnico">I.E. TECNICO SUPERIOR</a>
+                </div>
+            </div>
+
+            <!--Enlaces y lista desplegable-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+            <div class="justify-content-md-end collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item PLink"><a href="../Articulaciones/quenes somos mecatronica.html" class="nav-link">¿Quienes somos?</a></li>
+                    <li class="nav-item PLink"><a href="../Articulaciones/propuesta-detallada-mecatronica.html" class="nav-link">Propuesta Academica</a></li>
+                    <li class="nav-item PLink"><a href="../Galerias/gale-mecatronica.html" class="nav-link">Galeria</a></li>
+                    <li class="nav-item PLink"><a href="../Articulaciones/articulacion-sena-mecatronica.html" class="nav-link">Sena</a></li>
+                    <!-- Menú Desplegable Especialidades -->
+                    <li class="nav-item dropdown PLink">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEspecialidades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownEspecialidades">
+                            <li><a class="dropdown-item" href="../especialidades.html/Software.html">Software</a></li>
+                            <li><a class="dropdown-item" href="../especialidades.html/Dibujo-Tecnico.html">Dibujo Técnico</a></li>
+                            <li><a class="dropdown-item" href="../especialidades.html/ebanisteria.html">Ebanistería</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Cuadro1 del mero inicio (Sección: ¿Quiénes somos?) con margen superior ajustado -->
+    <div id="quienes-somos" class="container bg-portada h-100 mb-5" style="margin-top: 110px !important;">
+        <div class="row align-items-center">
+            <!--Texto con ajuste de tamaño y padding para evitar que se corte -->
+            <div class="col-12 col-md-4 text-start py-4 px-3 ps-md-4 pe-md-2">
+                <h1 class="text-black animacion1 fw-bold" style="font-size: 2.2rem; line-height: 1.2; font-family: 'Google Sans Flex', sans-serif;">Taller De Mecatrónica</h1>
+                <h5 class="TTecnico pt-3 text-start animacion1">Bienvenidos al</h5>
+                <h5 class="TTecnico text-start animacion1">taller de Mecatrónica!</h5> 
+                <a href="../Articulaciones/quenes somos mecatronica.html" class="TRLink animacion1 mt-2 d-inline-block">¿Quienes somos?</a>
+            </div>
+            <!--Foto-->
+            <div class="col-12 col-md-8 pe-0 ps-0 ps-md-1">
+                <img src="../imagenes/QUIENES SOMOS MECA.jpeg" alt="Referencia" class="w-100">
+            </div>
+        </div>  
+    </div>
+
+    <!-- SECCIÓN INDEPENDIENTE: ¿Qué se enseña? con Imagen Representativa y botón Saber más -->
+    <section class="mt-5 mb-5 container">
+        <div class="row align-items-center bg-portada p-4 p-md-5 rounded shadow-sm border border-dark">
+            <!-- Imagen a la izquierda -->
+            <div class="col-12 col-md-5 text-center mb-4 mb-md-0">
+                <img src="../imagenes/que enseñamos.jpeg" alt="¿Qué se enseña en Mecatrónica?" class="img-fluid border border-dark rounded shadow" style="max-height: 320px; object-fit: cover;">
+            </div>
+            <!-- Texto explicativo a la derecha -->
+            <div class="col-12 col-md-7 ps-md-4">
+                <h2 class="TRTitulo mb-3">¿Qué se enseña?</h2>
+                <p class="TRDescripcion mb-3" style="padding-right: 0;">
+                    En la Institución Educativa Técnico Superior, la especialidad en Automatización de Sistemas Mecatrónicos Industriales capacita a los estudiantes en electrotecnia, electrónica analógica y digital, servomecanismos y programación de sistemas automatizados.
+                </p>
+                <p class="TRDescripcion mb-4" style="padding-right: 0;">
+                    Preparamos técnicos integrales capaces de diagnosticar, programar e implementar sistemas mecatrónicos mediante la integración de circuitos y componentes mecánicos para optimizar procesos industriales.
+                </p>
+                <a href="../Articulaciones/propuesta-detallada-mecatronica.html" class="TRLink">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-5 border-2 border-dark container">
+
+    <!-- SECCIÓN DE TEMAS / PROPUESTA ACADÉMICA (Tarjetas Simétricas) -->
+    <section id="propuesta-academica" class="mt-5 mb-5 container">
+        <div class="text-center mb-5">
+            <h2 class="TRTitulo">Componentes Curriculares y Módulos</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Recuadro 1: Electrotecnia -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Electrotecnia</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/electrotecnia.jpg" alt="Electrotecnia" class="Recuadro" data-bs-toggle="modal" data-bs-target="#modalElectrotecnia">
+                    <p class="RDescripcion"> Grado Décimo (IHS: 3 | 120 horas): Estudio de circuitos eléctricos, análisis de corriente, voltaje y leyes aplicadas a sistemas mecatrónicos.</p>
+                </div> 
+            </div>
+
+            <!-- Recuadro 2: Electrónica Análoga - Digital -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Electrónica Análoga - Digital</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/electricidada analoga.jpg" alt="Electrónica Análoga - Digital" class="Recuadro" data-bs-toggle="modal" data-bs-target="#modalElectronica">
+                    <p class="RDescripcion"> Grado Décimo (IHS: 3 | 120 horas): Fundamentos de componentes discretos, amplificadores operacionales y compuertas lógicas digitales.</p>
+                </div>
+            </div>
+
+            <!-- Recuadro 3: Servomecanismos -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Servomecanismos</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/servomecanismo.jpg" alt="Servomecanismos" class="Recuadro" data-bs-toggle="modal" data-bs-target="#modalServomecanismos">
+                    <p class="RDescripcion"> Grado Décimo (IHS: 3 | 120 horas): Análisis y control de sistemas de movimiento, motores paso a paso, servomotores y mecanismos de realimentación. </p>
+                </div> 
+            </div>
+
+            <!-- Recuadro 4: Dibujo Técnico Aplicado -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Dibujo Técnico Aplicado</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/dibujo tecnico aplicado.jpg" alt="Dibujo Técnico Aplicado" class="Recuadro" data-bs-toggle="modal" data-bs-target="#modalDibujo">
+                    <p class="RDescripcion"> Grado Décimo (IHS: 2 | 80 horas): Representación gráfica normalizada de planos mecánicos, esquemas eléctricos y diagramas de control. </p>
+                </div>
+            </div>
+
+            <!-- Recuadro 5: Programación Interface de Control -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Programación Interface de Control</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/interfases.jpg" alt="Programación Interface" class="Recuadro" data-bs-toggle="modal" data-bs-target="#modalProgramacion">
+                    <p class="RDescripcion"> Grado Undécimo (IHS: 3 | 120 horas): Desarrollo de software e interfaces para la supervisión y control de procesos automatizados. </p>
+                </div> 
+            </div>
+
+            <!-- Recuadro 6: Microcontroladores -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Microcontroladores</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/microcontroladores.png" alt="Microcontroladores" class="Recuadro" data-bs-toggle="modal" data-bs-target="#modalMicrocontroladores">
+                    <p class="RDescripcion"> Grado Undécimo (IHS: 4 | 160 horas): Arquitectura, programación en lenguaje C/Assembly y aplicación práctica de sistemas embebidos. </p>
+                </div>
+            </div>
+
+            <!-- Recuadro 7: Sistemas de Automatización y Control -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Sistemas de Automatización y Control</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/sistemas de automatisacion.png" alt="Automatización y Control" class="Recuadro" data-bs-toggle="modal" data-bs-target="#modalAutomatizacion">
+                    <p class="RDescripcion"> Grado Undécimo (IHS: 4 | 160 horas): Implementación de lógica industrial, autómatas programables (PLCs) y optimización de celdas robotizadas. </p>
+                </div> 
+            </div>
+
+            <!-- Recuadro 8: Perfil del Egresado -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Perfil del Egresado</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/perfil del egresado.png" alt="Perfil del Egresado" class="Recuadro" data-bs-toggle="modal" data-bs-target="#modalPerfil">
+                    <p class="RDescripcion"> Técnico capacitado para diagnosticar, programar e implementar sistemas mecatrónicos orientados a la optimización de procesos industriales. </p>
+                </div> 
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= MODALES DETALLADOS (Tarjetas Flotantes) ================= -->
+
+    <!-- Modal: Electrotecnia -->
+    <div class="modal fade" id="modalElectrotecnia" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Electrotecnia (Grado Décimo)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                         Módulo fundamental de Grado Décimo (IHS: 3 | 120 horas) enfocado en el estudio teórico-práctico de los circuitos eléctricos y sus aplicaciones en la industria.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Leyes fundamentales de circuitos (Ohm y Kirchhoff).</li>
+                            <li>Análisis de corriente alterna (AC) y corriente continua (DC).</li>
+                            <li>Uso de instrumentos de medición eléctrica de precisión en tableros y componentes.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Electrónica Análoga - Digital -->
+    <div class="modal fade" id="modalElectronica" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Electrónica Análoga - Digital (Grado Décimo)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                         Módulo de Grado Décimo (IHS: 3 | 120 horas) que abarca el comportamiento de dispositivos semiconductores y sistemas de lógica binaria.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Diodos, transistores (BJT, MOSFET) y amplificadores operacionales.</li>
+                            <li>Algebra de Boole, compuertas lógicas y circuitos combinacionales/secuenciales.</li>
+                            <li>Diseño y simulación de circuitos impresos y tarjetas electrónicas de control.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Servomecanismos -->
+    <div class="modal fade" id="modalServomecanismos" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Servomecanismos (Grado Décimo)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                         Módulo de Grado Décimo (IHS: 3 | 120 horas) centrado en los sistemas de posicionamiento y control preciso de movimiento mecánico.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Funcionamiento de motores paso a paso, servomotores y actuadores lineales.</li>
+                            <li>Sistemas de realimentación (encoders, tacómetros y sensores de posición).</li>
+                            <li>Control de velocidad, aceleración y torque en ejes mecánicos automatizados.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Dibujo Técnico Aplicado -->
+    <div class="modal fade" id="modalDibujo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Dibujo Técnico Aplicado (Grado Décimo)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                         Módulo de Grado Décimo (IHS: 2 | 80 horas) enfocado en la representación técnica y simbología estandarizada para la ingeniería.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Interpretación y trazo de planos mecánicos e industriales.</li>
+                            <li>Diagramas esquemáticos eléctricos, electrónicos y neumáticos.</li>
+                            <li>Uso de herramientas de diseño asistido por computadora (CAD).</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Programación Interface de Control -->
+    <div class="modal fade" id="modalProgramacion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Programación Interface de Control (Grado Undécimo)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                         Módulo de Grado Undécimo (IHS: 3 | 120 horas) enfocado en el desarrollo de interfaces hombre-máquina (HMI) y software de supervisión.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Creación de interfaces gráficas para el control de procesos industriales.</li>
+                            <li>Comunicación entre computadores, PLCs y dispositivos de campo.</li>
+                            <li>Adquisición y visualización de datos de sensores en tiempo real.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Microcontroladores -->
+    <div class="modal fade" id="modalMicrocontroladores" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Microcontroladores (Grado Undécimo)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                         Módulo avanzado de Grado Undécimo (IHS: 4 | 160 horas) sobre la arquitectura y programación de sistemas embebidos basados en microcontroladores.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Arquitectura interna de microcontroladores y puertos de E/S.</li>
+                            <li>Programación en lenguajes estructurados para control de periféricos.</li>
+                            <li>Manejo de convertidores analógico-digitales (ADC), temporizadores e interrupciones.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Sistemas de Automatización y Control -->
+    <div class="modal fade" id="modalAutomatizacion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Sistemas de Automatización y Control (Grado Undécimo)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                         Módulo superior de Grado Undécimo (IHS: 4 | 160 horas) dedicado a la integración de sistemas automatizados complejos en entornos industriales.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Programación y configuración de Autómatas Programmables (PLCs).</li>
+                            <li>Sistemas neumáticos, hidráulicos y electroneumáticos industriales.</li>
+                            <li>Optimización de celdas de manufactura flexible y líneas de producción automatizadas.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Perfil del Egresado -->
+    <div class="modal fade" id="modalPerfil" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Perfil del Egresado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                        El egresado del programa técnico cuenta con una formación integral que le permite diagnosticar, programar e implementar sistemas mecatrónicos mediante la integración de circuitos eléctricos, electrónicos y componentes mecánicos para optimizar procesos industriales[cite: 7].
+                        <br><br>
+                        <strong>Competencias y Enfoque:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Dominio en la medición de variables físicas y verificación de sistemas automatizados[cite: 7].</li>
+                            <li>Mejora de la eficiencia operativa en el sector industrial[cite: 7].</li>
+                            <li>Liderazgo ético, responsabilidad social, compromiso con el desarrollo sustentable y comportamiento cívico[cite: 7].</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Reseña y Conceptos de Mecatrónica (3 Autores) -->
+    <section id="recursos" class="p-5 bg-light me-0 ms-0">
+        <div class="container">
+            <div class="row">
+                <!-- Columna izquierda: Títulos Reseña y Conceptos arriba -->
+                <div class="col-12 col-md-5 text-start align-self-start">
+                    <h2 class="TituloR mb-2">Reseña</h2>
+                    <h3 class="TTecnico fw-bold m-0" style="font-size: 1.75rem;">Conceptos de Mecatrónica</h3>
+                </div>
+
+                <!-- Columna derecha: Carrusel de conceptos (3 autores) -->
+                <div class="col-12 col-md-7">
+                    <div id="deslizante" class="carousel slide my-4" data-bs-ride="carousel">
+                        <div class="carousel-inner pb-5" id="carrusel-resenas-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <p class="reseña">William Bolton (2006) define la Mecatrónica como la integración sinérgica de la ingeniería mecánica, la electrónica, los sistemas de control y la computación para el diseño de productos inteligentes.</p>
+                                <h2 class="testigo">William Bolton</h2>
+                                <hr class="TLinea opacity-100 mx-auto">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <p class="reseña">Klaus Janschek (2010) señala que los sistemas mecatrónicos se basan en el diseño funcional estructurado combinando el procesamiento de información y tecnologías de actuación.</p>
+                                <h2 class="testigo">Klaus Janschek</h2>
+                                <hr class="TLinea opacity-100 mx-auto">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <p class="reseña">Robert Bishop (2002) la describe como una metodología centrada en la integración de sistemas de ingeniería para crear productos y procesos automatizados de alto rendimiento.</p>
+                                <h2 class="testigo">Robert Bishop</h2>
+                                <hr class="TLinea opacity-100 mx-auto">
+                            </div>
+                        </div>
+
+                        <div class="carousel-indicators mt-4 position-relative m-0 justify-content-center" id="carrusel-indicadores">
+                            <button type="button" data-bs-target="#deslizante" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#deslizante" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#deslizante" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Créditos del Equipo de Trabajo y la Institución -->
+    <div class="row text-center pb-4 pt-3 border-top border-dark mx-4">
+        <div class="col-12">
+            <p class="mb-2" style="font-family: 'Avenir', sans-serif; font-size: 0.95rem; font-weight: 500;">
+                <strong>Equipo de Desarrollo:</strong> 
+               Julia Bolivar Cruz, Jose Jair Devía , Camila Andre Solano , Eddie Santiago Marín , Breiner Mateo Restrepo.
+            </p>
+            <p class="mb-0 text-muted" style="font-family: 'Avenir', sans-serif; font-size: 0.85rem;">
+                Institución Educativa Técnico Superior — Neiva, Huila
+            </p>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

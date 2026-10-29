@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFTECH</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Fuente de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="otros/Avenir-Light.ttf">
+    <style>
+        /* Permite un desplazamiento suave al hacer clic en las opciones del menú */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Cursor de clic en las imágenes de las tarjetas para abrir el modal detallado */
+        .tarjeta img.Recuadro {
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .tarjeta img.Recuadro:hover {
+            transform: scale(1.02);
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Encabezado / Menú con anclajes-->
+    <nav id="navbar-desktop" class="bg-superior navbar navbar-expand-md text-center p-3 sticky-top">
+        <!--Logo y Titulo-->
+        <div class="container-fluid m-0 p-0">
+            <div class="col-9 col-md-4 d-flex flex-row">
+                <!--Logo-->
+                <div>
+                    <a href="https://tecnicosuperiorneiva.edu.co" target="_blank"><img src="../imagenes/ColegioLogo2.png" alt="Tecnico Superior" class="TecLogo me-3"></a>
+                </div>
+                <!--Titulo-->
+                <div class="align-content-center text-start">
+                    <a href="#" class="TTecnico">I.E. TECNICO SUPERIOR</a>
+                </div>
+            </div>
+
+            <!--Enlaces y lista desplegable-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+            <div class="justify-content-md-end collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item PLink"><a href="../Articulaciones/quienes-somos.html" class="nav-link">¿Quienes somos?</a></li>
+                    <li class="nav-item PLink"><a href="../Articulaciones/propuesta-detallada soft.html" class="nav-link">Propuesta Academica</a></li>
+                    <li class="nav-item PLink"><a href="../Galerias/gale-sof.html" class="nav-link">Galeria</a></li>
+                    <li class="nav-item PLink"><a href="../Articulaciones/articulacion-sena.html" class="nav-link">Sena</a></li>
+                    <!-- Menú Desplegable Especialidades -->
+                    <li class="nav-item dropdown PLink">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEspecialidades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Especialidades
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownEspecialidades">
+                            <li><a class="dropdown-item" href="Mecatronica.html">Mecatrónica</a></li>
+                            <li><a class="dropdown-item" href="dibujo-tecnico.html">Dibujo Técnico</a></li>
+                            <li><a class="dropdown-item" href="ebanisteria.html">Ebanistería</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Cuadro1 del mero inicio (Sección: ¿Quiénes somos?) con margen superior ajustado -->
+    <div id="quienes-somos" class="container bg-portada h-100 mb-5" style="margin-top: 110px !important;">
+        <div class="row align-items-center">
+            <!--Texto-->
+            <div class="col-12 col-md-4 text-start py-4 px-3 ps-md-4 pe-md-2">
+                <h1 class="text-black animacion1 fw-bold" style="font-size: 2.2rem; line-height: 1.2; font-family: 'Google Sans Flex', sans-serif;">Taller De Software</h1>
+                <h5 class="TTecnico pt-3 text-start animacion1">Bienvenidos al</h5>
+                <h5 class="TTecnico text-start animacion1">taller de software!</h5>
+                <a href="../Articulaciones/quienes-somos.html" class="TRLink animacion1 mt-2 d-inline-block">¿Quienes somos?</a>
+            </div>
+            <!--Foto-->
+            <div class="col-12 col-md-8 pe-0 ps-0 ps-md-1">
+                <img src="../imagenes/2.jpeg" alt="Referencia" class="w-100">
+            </div>
+        </div>  
+    </div>
+
+    <!-- SECCIÓN INDEPENDIENTE: ¿Qué se enseña? con Imagen Representativa y botón Saber más -->
+    <section class="mt-5 mb-5 container">
+        <div class="row align-items-center bg-portada p-4 p-md-5 rounded shadow-sm border border-dark">
+            <!-- Imagen a la izquierda -->
+            <div class="col-12 col-md-5 text-center mb-4 mb-md-0">
+                <img src="../imagenes/1.jpeg" alt="¿Qué se enseña en Software?" class="img-fluid border border-dark rounded shadow" style="max-height: 320px; object-fit: cover;">
+            </div>
+            <!-- Texto explicativo a la derecha -->
+            <div class="col-12 col-md-7 ps-md-4">
+                <h2 class="TRTitulo mb-3">¿Qué se enseña?</h2>
+                <p class="TRDescripcion mb-3" style="padding-right: 0;">
+                    En la Institución Educativa Técnico Superior, la media técnica en desarrollo de software capacita a los estudiantes en lógica, lenguajes, diseño web y gestión de bases de datos, preparando a los alumnos para responder a las necesidades tecnológicas actuales.
+                </p>
+                <p class="TRDescripcion mb-4" style="padding-right: 0;">
+                    Preparamos desarrolladores competentes en la creación de aplicaciones funcionales, aplicando buenas prácticas de programación y metodologías ágiles.
+                </p>
+                <a href="../Articulaciones/propuesta-detallada soft.html" class="TRLink">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-5 border-2 border-dark container">
+
+    <!-- SECCIÓN DE TEMAS / PROPUESTA ACADÉMICA (Tarjetas Simétricas) -->
+    <section id="propuesta-academica" class="mt-5 mb-5 container">
+        <div class="text-center mb-5">
+            <h2 class="TRTitulo">Componentes Curriculares y Módulos</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Recuadro1: Lógica -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Lógica de Programación</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/loguica de programacion.jpeg" alt="Lógica de programación" class="Recuadro" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalLogica">
+                    <p class="RDescripcion"> Desarrollo del pensamiento lógico mediante algoritmos, estructuras de control y estrategias para el análisis y solución de problemas computacionales.</p>
+                </div> 
+            </div>
+
+            <!-- Recuadro2: Estructurada -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Programación Estructurada</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/programacion estructurada.jpeg" alt="Programación estructurada" class="Recuadro" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalEstructurada">
+                    <p class="RDescripcion"> Fundamentos para la construcción organizada de programas mediante secuencias, condiciones, ciclos y funciones.</p>
+                </div>
+            </div>
+
+            <!-- Recuadro3: POO -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">P. Orientada a Objetos</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/programacion orientada a objetos.jpeg" alt="Programación orientada a objetos" class="Recuadro" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalPoo">
+                    <p class="RDescripcion"> Construcción organizada de programas mediante secuencias, estructuras condicionales, ciclos y funciones, orientada al desarrollo de soluciones eficientes. </p>
+                </div> 
+            </div>
+
+            <!-- Arquitectura -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Arquitectura de Computadores</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/arquitectura de computadores.jpeg" alt="Arquitectura de computadores" class="Recuadro" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalArqui">
+                    <p class="RDescripcion"> Comprensión de la estructura, componentes y funcionamiento de los sistemas de cómputo y su relación con la ejecución del software. </p>
+                </div>
+            </div>
+
+            <!-- Diseño Web -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Diseño Web</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/diseño wed.jpeg" alt="Diseño web" class="Recuadro" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalWeb">
+                    <p class="RDescripcion"> Desarrollo de interfaces web mediante HTML y CSS, integrando estructura, estilos, organización visual y adaptación a diferentes dispositivos. </p>
+                </div> 
+            </div>
+
+            <!-- Lenguajes -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Lenguajes de Programación</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/lenguajes de programacion.jpeg" alt="Lenguajes de programación" class="Recuadro" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalLenguajes">
+                    <p class="RDescripcion"> Desarrollo de soluciones mediante JavaScript, Java, Python, PHP y SQL, integrando programación, desarrollo web, procesamiento y gestión de datos. </p>
+                </div>
+            </div>
+              
+            <!-- Práctica -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Práctica Profesional</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/practica profecional.jpeg" alt="Práctica profesional" class="Recuadro" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalPractica">
+                    <p class="RDescripcion"> Integración de conocimientos y competencias técnicas mediante experiencias prácticas relacionadas con proyectos y contextos propios del sector productivo. </p>
+                </div>
+            </div>
+
+            <!-- Metodologías Ágiles -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Metodologías Ágiles</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/metodologias agiles.jpeg" alt="Metodologías ágiles" class="Recuadro" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalAgiles">
+                    <p class="RDescripcion"> Aplicación de principios y prácticas ágiles para la planificación, organización, desarrollo y seguimiento de proyectos de software.</p>
+                </div>
+            </div>
+
+            <!-- Bases de Datos -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Bases de Datos</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/Slide1.jpg" alt="Bases de datos" class="Recuadro" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalBasesDatos">
+                    <p class="RDescripcion"> Diseño, modelado y gestión de información mediante sistemas relacionales, asegurando la persistencia, integridad y seguridad de los datos.</p>
+                </div>
+            </div>
+
+            <!-- Perfil del Egresado -->
+            <div class="col-12 col-md-5">
+                <h2 class="RTitulo">Perfil del Egresado</h2>
+                <div class="tarjeta">
+                    <img src="../imagenes/perfil del egresado.png" alt="Perfil del Egresado" class="Recuadro" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalPerfil">
+                    <p class="RDescripcion"> Técnico en Programación de software capacitado para desarrollar aplicaciones, análisis, diseño, producción y verificación de productos informáticos. </p>
+                </div> 
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= MODALES DETALLADOS (Tarjetas Flotantes) ================= -->
+
+    <!-- Modal 1: Lógica -->
+    <div class="modal fade" id="modalLogica" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Lógica de Programación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                         Es la cimentación indispensable para cualquier desarrollador de software. Este módulo se centra en desarrollar la agilidad mental y el pensamiento computacional para estructurar soluciones analíticas antes de volcar código en un lenguaje específico.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Diseño y optimización de algoritmos paso a paso.</li>
+                            <li>Construcción de diagramas de flujo (DFD) y pseudocódigo estructurado.</li>
+                            <li>Manejo riguroso de tipos de datos, variables y constantes.</li>
+                            <li>Implementación de operadores aritméticos, lógicos y relacionales.</li>
+                            <li>Estructuras de control condicionales (if, else if, switch) y ciclos repetitivos (for, while, do-while).</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Estructurada -->
+    <div class="modal fade" id="modalEstructurada" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Programación Estructurada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                        Un paradigma fundamental enfocado en maximizar la legibilidad, calidad y mantenibilidad del software. En lugar de escribir código monolítico o desordenado, se enseña a seccionar los programas lógicamente en bloques más pequeños y manejables.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Modularización del código mediante funciones y subrutinas independientes.</li>
+                            <li>Mecanismos de paso de parámetros (por valor y por referencia).</li>
+                            <li>Control de ámbito de variables (locales frente a globales).</li>
+                            <li>Prevención de errores de ejecución y buenas prácticas de escritura limpia (Clean Code).</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: POO -->
+    <div class="modal fade" id="modalPoo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Programación Orientada a Objetos (POO)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                        El estándar adoptado por la industria moderna para modelar software complejo simulando entidades y comportamientos del mundo real. Permite que múltiples desarrolladores trabajen en paralelo sobre componentes modulares reutilizables.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Abstracción de elementos y modelado de clases e instancias (objetos).</li>
+                            <li>Encapsulamiento de datos mediante modificadores de acceso (público, privado, protegido).</li>
+                            <li>Herencia para extender funcionalidades y evitar la duplicación de código.</li>
+                            <li>Polimorfismo para invocar métodos de forma genérica adaptándose a cada objeto.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Arquitectura -->
+    <div class="modal fade" id="modalArqui" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Arquitectura de Computadores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                      Conecta el mundo del software con el hardware subyacente. Comprender cómo operan físicamente los equipos informáticos dota al estudiante de la capacidad de escribir programas mucho más eficientes en consumo de recursos, memoria y velocidad de procesamiento.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Modelo estructural de Von Neumann y componentes internos de un computador.</li>
+                            <li>Funcionamiento de la CPU, unidad aritmético-lógica (ALU) y registros.</li>
+                            <li>Jerarquía y gestión de la memoria (memoria principal RAM, caché y registros).</li>
+                            <li>Ciclo de instrucción, buses de sistema y procesos de compilación o interpretación del código.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Web -->
+    <div class="modal fade" id="modalWeb" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Diseño Web</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                      Especializado en la creación y maquetación de interfaces gráficas de usuario atractivas, funcionales y orientadas a la experiencia del usuario (UX/UI), asegurando que el producto digital sea accesible desde cualquier dispositivo.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Estructuración semántica y moderna de documentos con HTML5.</li>
+                            <li>Estilos avanzados, tipografías y efectos visuales con CSS3.</li>
+                            <li>Diseño responsivo y adaptativo mediante Flexbox y CSS Grid.</li>
+                            <li>Integración y personalización de interfaces ágiles utilizando el framework Bootstrap 5.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Lenguajes -->
+    <div class="modal fade" id="modalLenguajes" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Lenguajes de Programación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                       Inmersión profunda en las tecnologías de programación más demandadas y vigentes en el mercado laboral global, abarcando tanto el desarrollo del lado del cliente (Frontend) como del servidor (Backend).
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>JavaScript nativo para dotar de dinamismo e interactividad a las páginas web.</li>
+                            <li>PHP para la construcción de lógica del servidor y procesamiento de formularios.</li>
+                            <li>Java como lenguaje robusto para el desarrollo de sistemas de alta escala.</li>
+                            <li>Python aplicado a la automatización y análisis general de datos.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: Práctica -->
+    <div class="modal fade" id="modalPractica" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Práctica Profesional</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                        Fase de consolidación en la que los estudiantes enfrentan requerimientos y retos reales propios del sector productivo, simulando entornos laborales profesionales y aplicando todos los conocimientos teóricos en proyectos tangibles.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Análisis y levantamiento de requerimientos funcionales con usuarios reales.</li>
+                            <li>Desarrollo integral de proyectos institucionales (como aplicaciones web con códigos QR, sistemas de gestión, etc.).</li>
+                            <li>Fases de pruebas de software (Testing), detección de errores y depuración.</li>
+                            <li>Documentación técnica y defensa de propuestas ante un comité evaluador.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8: Ágiles -->
+    <div class="modal fade" id="modalAgiles" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Metodologías Ágiles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                         Marcos de trabajo modernos que transforman la forma en que los equipos de desarrollo organizan sus tareas, fomentando la adaptabilidad ante los cambios, la comunicación constante y las entregas de valor frecuentes.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Filosofía y principios del Manifiesto Ágil.</li>
+                            <li>Marco de trabajo Scrum (roles, ceremonias como Sprints y Daily meetings, y artefactos).</li>
+                            <li>Uso de tableros visuales Kanban para el seguimiento del flujo de trabajo diario.</li>
+                            <li>Control de versiones y colaboración grupal en proyectos de desarrollo.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9: Bases de Datos -->
+    <div class="modal fade" id="modalBasesDatos" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Bases de Datos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                         Fundamentación esencial para el almacenamiento estructurado y eficiente de la información generada por cualquier aplicación moderna. En este espacio se aprende a diseñar y administrar repositorios de datos confiables.
+                        <br><br>
+                        <strong>Aspectos clave que se abordan:</strong>
+                        <ul style="font-family: 'Avenir', sans-serif; font-size: 1.05rem;">
+                            <li>Modelado de datos conceptual y lógico mediante diagramas Entidad-Relación.</li>
+                            <li>Creación y manipulación de esquemas relacionales utilizando SQL (DDL y DML).</li>
+                            <li>Implementación de consultas avanzadas, uniones (joins), vistas y procedimientos almacenados.</li>
+                            <li>Conexión de bases de datos con lenguajes de programación del servidor mediante sentencias preparadas.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 10: Perfil del Egresado -->
+    <div class="modal fade" id="modalPerfil" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-portada border-dark">
+                <div class="modal-header border-bottom border-dark">
+                    <h5 class="modal-title RTitulo mt-0">Perfil del Egresado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="RDescripcion">
+                        El Técnico en Programación de software estará en capacidad de desarrollar aplicaciones o productos informáticos (software), así como también estará capacitado en análisis, diseño, producción y verificación de aplicaciones y productos informáticos integrando técnicas y conocimientos tecnológicos específicos.
+                        <br><br>
+                        De igual manera, desarrolla e implementa aplicativos de software para entornos Windows o entornos Web sobre diferentes plataformas y lenguajes de programación.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Reseña y Conceptos de Software (3 Autores) -->
+    <section id="recursos" class="p-5 bg-light me-0 ms-0">
+        <div class="container">
+            <div class="row">
+                <!-- Columna izquierda: Títulos Reseña y Conceptos arriba -->
+                <div class="col-12 col-md-5 text-start align-self-start">
+                    <h2 class="TituloR mb-2">Reseña</h2>
+                    <h3 class="TTecnico fw-bold m-0" style="font-size: 1.75rem;">Conceptos de software</h3>
+                </div>
+
+                <!-- Columna derecha: Carrusel de conceptos -->
+                <div class="col-12 col-md-7">
+                    <div id="deslizante" class="carousel slide my-4" data-bs-ride="carousel">
+                        <div class="carousel-inner pb-5" id="carrusel-resenas-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <p class="reseña">F. L. Bauer (1969 / 1971) define al Software como el establecimiento y uso de principios de ingeniería robustos y sólidos para obtener de manera económica software que sea fiable y funcione de manera eficiente sobre máquinas reales.</p>
+                                <h2 class="testigo">Friedrich Ludwig Bauer</h2>
+                                <hr class="TLinea opacity-100 mx-auto">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <p class="reseña">Para Barry W. Boehm (1976 / 1981) es la aplicación práctica del conocimiento científico y las matemáticas en el diseño y construcción de programas, haciendo que las capacidades de los ordenadores sean útiles para las personas de forma viable y económica.</p>
+                                <h2 class="testigo">Barry Boehm</h2>
+                                <hr class="TLinea opacity-100 mx-auto">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <p class="reseña">Y para Ian Sommerville (2005) se trata de una disciplina que se refiere a todos los aspectos de la producción de software, abarcando los problemas prácticos, métodos y técnicas del proceso de desarrollo.</p>
+                                <h2 class="testigo">Ian Sommerville</h2>
+                                <hr class="TLinea opacity-100 mx-auto">
+                            </div>
+                        </div>
+
+                        <div class="carousel-indicators mt-4 position-relative m-0 justify-content-center" id="carrusel-indicadores">
+                            <button type="button" data-bs-target="#deslizante" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#deslizante" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#deslizante" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Créditos del Equipo de Trabajo y la Institución -->
+    <div class="row text-center pb-4 pt-3 border-top border-dark mx-4">
+        <div class="col-12">
+            <p class="mb-2" style="font-family: 'Avenir', sans-serif; font-size: 0.95rem; font-weight: 500;">
+                <strong>Equipo de Desarrollo:</strong> 
+               Julia Bolivar Cruz, Jose Jair Devía , Camila Andre Solano , Eddie Santiago Marín , Breiner Mateo Restrepo.
+            </p>
+            <p class="mb-0 text-muted" style="font-family: 'Avenir', sans-serif; font-size: 0.85rem;">
+                Institución Educativa Técnico Superior — Neiva, Huila
+            </p>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

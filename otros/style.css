@@ -1,0 +1,346 @@
+/*navbar/parte de arriba*/
+#navbar-desktop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Asegura que quede por encima del contenido */
+    transition: top 0.3s ease-in-out; /* Animación suave al ocultar/mostrar */
+}
+
+/*Fondos*/
+.bg-superior {
+    background-color: rgb(245, 245, 245);
+}
+.bg-portada {
+    background-color: rgb(215, 226, 255);
+}
+
+/*Logo del Tecnico*/
+.TecLogo {
+    max-width: 90px;
+    width: 100%;
+    
+}
+
+/*Letras del medio*/
+.TTecnico {
+    font-size: 1.5rem;
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+.Letra {
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+.Letra2 {
+    font-size: 70px;
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+/*Botones del navbar*/
+.PLink {
+    font-size: 15px;
+    background: none;
+    text-decoration: none;
+    transition: 0.2s;
+    background-color: transparent;
+    color: rgb(72, 72, 72);
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+.PLink:hover {
+    transform: scale(1.05);
+    color: rgb(54, 54, 54);
+}
+
+/*Cuadro2*/
+/*Textito2*/
+.TRTitulo {
+    font-size: 32px;
+    margin-top: 2rem;
+    margin-bottom: 18px;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+}
+.TRDescripcion {
+    padding-right: 7rem;
+    font-size: 18px;
+    color: black;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 100;
+}
+.TRLink {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background: rgb(28, 28, 107);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.TRLink:hover {
+    background: rgb(194, 194, 240);
+    color: rgb(10, 10, 189);
+}
+
+/*Recuadro/imagenes*/
+.tarjeta {
+    width: 75%;
+}
+.Recuadro {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: block;
+}
+.RTitulo {
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-bottom: 18px;
+    color: rgb(9, 58, 161);
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+}
+.RDescripcion {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    margin-right: 0.5rem;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    white-space: normal;
+}
+
+/* Parte de las reseñas / conceptos */
+.TituloR {
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+}
+.DescripcionR {
+    font-size: 1.25rem;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 200;
+}
+/* Cuadro del concepto: se eliminó la altura fija para pegar el autor */
+.reseña {
+    color: black;
+    font-size: 1.35rem;
+    font-family: 'Avenir', sans-serif;
+    margin-bottom: 0.5rem;
+}
+/* Autor del concepto: azul oscuro coordinado con la paleta del sitio */
+.testigo {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(28, 28, 107);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+.TLinea {
+    margin-top: 0.5rem;
+    margin-bottom: 5px;
+    border: 3px solid black;
+    width: 30%;
+}
+
+/* Forma circular a los botoncitos del carrusel */
+#deslizante .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1.5px solid white;
+    opacity: 1;
+    margin-right: 8px;
+}
+
+/* Cuando se activa */
+#deslizante .carousel-indicators .active {
+    background-color: white;
+    border-color: black;
+    opacity: 1;
+}
+
+/*Formulario (Parte final)*/
+.FLetra {
+    padding-top: 20px;
+    color: rgb(100, 100, 100);
+    font-size: 25px;
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+.FLetra2 {
+    color: rgb(126, 1, 1) !important;
+    margin-top: 0px;
+    font-size: 25px;
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+.MtLetra1 {
+    color: black;
+    font-size: 32px;
+    padding-top: 100px;
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+}
+.MtLetra2 {
+    color: rgb(31, 31, 31);
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+}
+.boton1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-color: black;
+    border: 4px solid;
+    padding: 7px 35px;
+    font-size: 20px;
+    background: none;
+    margin-top: 25px;
+    transition: 0.2s;
+}
+.boton1:hover {
+    background: rgb(31, 31, 144);
+    border-color: rgb(31, 31, 144);
+    color: rgb(253, 253, 253);
+}
+.Linea {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-width: 2px;
+    opacity: 100;
+    border-color: rgb(66, 88, 119);
+}
+.TCuadro {
+    border: none !important;
+    background: transparent !important;
+    outline: none !important;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: black !important;
+    font-family: "Google Sans Flex", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 300 !important;
+}
+.TCuadro:user-invalid + .Linea {
+    border-color: rgb(140, 26, 26);
+}
+
+.input-automatico {
+    border: none;
+    outline: none;
+    resize: none;
+    overflow-y: hidden;
+    min-height: 70px;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('otros/Avenir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*Animacion Del Texto*/
+.animacion1 {
+    animation: Abajo 1s ease-out;
+}
+@keyframes Abajo {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ======================================================
+   ICONOS ORIGINALES DEL LABORATORIO DE SOFTWARE
+   Normalización visual sin cambiar el diseño de los iconos
+   ====================================================== */
+
+/* Las tarjetas mantienen una distribución uniforme y adaptable. */
+#propuesta-academica .tarjeta {
+    width: 100%;
+    max-width: 360px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Todas las imágenes ocupan exactamente el mismo espacio.
+   object-fit: contain evita deformarlas o recortarlas. */
+#propuesta-academica .tarjeta img.Recuadro {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform .25s ease, filter .25s ease;
+}
+
+#propuesta-academica .tarjeta img.Recuadro:hover {
+    transform: translateY(-4px) scale(1.025);
+    filter: drop-shadow(0 7px 10px rgba(9, 58, 161, .14));
+}
+
+#propuesta-academica .RTitulo {
+    min-height: 2.4em;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+}
+
+#propuesta-academica .RDescripcion {
+    width: 100%;
+    max-width: 360px;
+    margin: 1rem auto 2.5rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 767.98px) {
+    #propuesta-academica .tarjeta img.Recuadro {
+        width: 190px;
+        height: 190px;
+    }
+    #propuesta-academica .RTitulo {
+        min-height: 0;
+        margin-top: 1.25rem;
+    }
+}
